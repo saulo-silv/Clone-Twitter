@@ -49,7 +49,6 @@ const btnDeletar = document.getElementById("btnremover");
       btnDeletar.onclick = function(e) {
         e.preventDefault();
         const feed = document.querySelector("#divPrincipal");
-        
         feed.removeChild(novoPost);
         
       }
@@ -58,7 +57,6 @@ const btnDeletar = document.getElementById("btnremover");
 
 
 const btnFoco = document.getElementById("focos");
-
 btnFoco.onclick = function(evento){
   evento.preventDefault();
   
