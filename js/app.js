@@ -35,13 +35,20 @@ btnAddPostar.onclick = function(e) {
                       <span class="material-icons"> repeat </span>
                       <span class="material-icons"> favorite_border </span>
                       <span class="material-icons"> publish </span>
-                      <span class="material-icons"> update </span>
+                      <span class="material-icons" id="btnupdate"> update </span>
                       <span class="material-icons" id="btnremover"> delete </span>
                       
                     </div>
                 </div>`   
 
   novoPost.prepend(estruturaDiv);
+
+const btnAtualizar = document.getElementById("btnupdate");
+      btnAtualizar.onclick = function(e){
+        e.preventDefault();
+        const feed = document.querySelector("#divPrincipal");
+        feed.replaceChild(novoPost)
+      }
 
   
 const btnDeletar = document.getElementById("btnremover");
